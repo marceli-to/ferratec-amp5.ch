@@ -1,0 +1,40 @@
+{{# Orange top bar #}}
+<div class="bg-accent text-white text-xs py-1.5">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+    <span>{{ "Exklusiv über Ferratec in der Schweiz" | trans }}</span>
+    <div class="hidden sm:flex items-center gap-4">
+      <a href="tel:+41566492121" class="hover:text-white/80 transition-colors">056 649 21 21</a>
+      <a href="mailto:info@ferratec.ch" class="hover:text-white/80 transition-colors">info@ferratec.ch</a>
+    </div>
+  </div>
+</div>
+
+{{# Sticky header #}}
+<header class="sticky top-0 z-50 bg-zinc-900 text-white py-4">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+    <a href="{{ site:url }}" class="flex items-center gap-6" aria-label="Homepage">
+      {{ partial:components/icons/logo-ferratec class="h-6 w-auto brightness-0 invert" }}
+      {{ partial:components/icons/logo-ampsociety class="h-5 w-auto" }}
+    </a>
+    <div class="hidden md:flex items-center gap-6">
+      <nav class="flex items-center gap-6 text-sm text-zinc-400">
+        <a href="{{ site:url }}#vorteile" class="hover:text-white transition-colors">{{ "Vorteile" | trans }}</a>
+        <a href="{{ site:url }}#schulung" class="hover:text-white transition-colors">{{ "Schulung" | trans }}</a>
+        <a href="{{ site:url }}#planner" class="hover:text-white transition-colors">{{ "Planner" | trans }}</a>
+        <a href="{{ site:url }}#news" class="hover:text-white transition-colors">{{ "News" | trans }}</a>
+        <a href="{{ site:url }}#kontakt" class="hover:text-white transition-colors">{{ "Kontakt" | trans }}</a>
+      </nav>
+      {{# Language switcher #}}
+      <div class="flex items-center gap-2 text-xs text-zinc-500">
+        {{ locales }}
+          {{ if locale:key == site:handle }}
+            <span class="text-white">{{ locale:short | upper }}</span>
+          {{ else }}
+            <a href="{{ url }}" class="hover:text-white transition-colors">{{ locale:short | upper }}</a>
+          {{ /if }}
+          {{ unless last }}<span class="text-zinc-700">|</span>{{ /unless }}
+        {{ /locales }}
+      </div>
+    </div>
+  </div>
+</header>

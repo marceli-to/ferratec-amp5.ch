@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -v)",
+      "Bash(composer:*)",
+      "Bash(statamic new:*)",
+      "Bash(shopt -s dotglob)",
+      "Bash(mv tmp_statamic/* .)",
+      "Bash(./please list:*)",
+      "Bash(php please:*)"
+    ]
+  }
+}

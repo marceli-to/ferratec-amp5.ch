@@ -1,0 +1,8 @@
+<div class="pt-8 md:pt-12 pb-16 md:pb-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-2xl font-semibold tracking-tight mb-8">{{ "AMP5 im Einsatz" | trans }}</h2>
+    <video class="w-full aspect-video bg-zinc-900" controls preload="metadata"{{ if poster }} poster="{{ poster }}"{{ /if }}>
+      {{ if video_url }}<source src="{{ video_url }}" type="video/mp4">{{ /if }}
+    </video>
+  </div>
+</div>

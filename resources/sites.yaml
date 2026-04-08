@@ -1,0 +1,20 @@
+de:
+  name: Deutsch
+  locale: de_CH
+  lang: de
+  url: /
+en:
+  name: English
+  locale: en_US
+  lang: en
+  url: /en/
+fr:
+  name: Français
+  locale: fr_CH
+  lang: fr
+  url: /fr/
+it:
+  name: Italiano
+  locale: it_CH
+  lang: it
+  url: /it/

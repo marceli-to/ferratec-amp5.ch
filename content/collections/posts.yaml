@@ -1,0 +1,15 @@
+title: Posts
+template: show
+layout: layout
+route: '{slug}'
+sort_dir: desc
+date: true
+date_behavior:
+  past: public
+  future: private
+sites:
+  - de
+  - en
+  - fr
+  - it
+propagate: true

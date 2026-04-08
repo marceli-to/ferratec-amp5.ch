@@ -1,0 +1,16 @@
+name: 'Marcel Stadelmann'
+super: true
+id: 837ce95e-89bd-471c-af1b-fefad55d3952
+password_hash: $2y$12$5j7xo/Rc.DxtGcRp0beuxebTk4FUIKtFlzQ23HsvLW10ckU8C/P6q
+preferences:
+  collections:
+    pages:
+      view: tree
+    listing_mode: list
+    posts:
+      view: list
+      columns:
+        - title
+        - date
+        - site
+        - status

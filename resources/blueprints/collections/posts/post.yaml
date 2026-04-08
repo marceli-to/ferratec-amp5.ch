@@ -1,0 +1,127 @@
+title: Post
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: date
+            field:
+              type: date
+              display: Date
+              required: true
+          -
+            handle: teaser
+            field:
+              type: textarea
+              display: Teaser
+              instructions: 'Short text shown in the news overview on the homepage.'
+          -
+            handle: image
+            field:
+              type: assets
+              display: 'Hero Image'
+              container: assets
+              max_files: 1
+          -
+            handle: elements
+            field:
+              type: replicator
+              display: Elements
+              sets:
+                content:
+                  display: Content
+                  sets:
+                    text:
+                      display: Text
+                      icon: text
+                      fields:
+                        -
+                          handle: heading
+                          field:
+                            type: text
+                            display: Heading
+                        -
+                          handle: text
+                          field:
+                            type: bard
+                            display: Text
+                            buttons:
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - anchor
+                    image:
+                      display: Image
+                      icon: media-image
+                      fields:
+                        -
+                          handle: image
+                          field:
+                            type: assets
+                            display: Image
+                            container: assets
+                            max_files: 1
+                        -
+                          handle: caption
+                          field:
+                            type: textarea
+                            display: Caption
+                    image_text:
+                      display: 'Image & Text'
+                      icon: layout-sidebar-reverse
+                      fields:
+                        -
+                          handle: image
+                          field:
+                            type: assets
+                            display: Image
+                            container: assets
+                            max_files: 1
+                        -
+                          handle: label
+                          field:
+                            type: text
+                            display: Label
+                        -
+                          handle: heading
+                          field:
+                            type: text
+                            display: Heading
+                        -
+                          handle: text
+                          field:
+                            type: textarea
+                            display: Text
+                    video:
+                      display: Video
+                      icon: media-webcam
+                      fields:
+                        -
+                          handle: video_url
+                          field:
+                            type: text
+                            display: 'Video URL'
+                            instructions: 'URL to the video file (mp4).'
+                        -
+                          handle: poster
+                          field:
+                            type: assets
+                            display: 'Poster Image'
+                            container: assets
+                            max_files: 1
+  settings:
+    display: Settings
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo

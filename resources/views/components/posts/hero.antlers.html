@@ -1,0 +1,23 @@
+<div class="pt-16 md:pt-24 pb-8 md:pb-12">
+  <div class="max-w-6xl mx-auto px-6">
+    <a href="{{ site:url }}#news" class="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-900 transition-colors mb-8">
+      {{ partial:components/icons/icon-arrow-left class="size-4" }}
+      {{ "Zurück zu News" | trans }}
+    </a>
+    {{ if image }}
+      <img src="{{ image }}" alt="" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover">
+    {{ /if }}
+  </div>
+</div>
+
+<div class="pb-16 md:pb-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-3xl">
+      <p class="text-sm text-zinc-500 mb-4">{{ date format="F Y" }}</p>
+      <h1 class="text-4xl md:text-5xl font-semibold tracking-tight mb-8 text-balance">{{ title }}</h1>
+      {{ if teaser }}
+        <p class="text-lg text-zinc-500 text-pretty">{{ teaser }}</p>
+      {{ /if }}
+    </div>
+  </div>
+</div>

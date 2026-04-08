@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "../views";
+@source "../../content";
+
+@theme {
+  --font-dm: "DM Sans", system-ui, sans-serif;
+  --color-accent: #ff6a13;
+}

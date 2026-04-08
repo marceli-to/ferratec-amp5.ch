@@ -1,0 +1,25 @@
+<article>
+
+  {{ partial:components/posts/hero }}
+
+  {{ elements }}
+    {{ if type == "text" }}
+      {{ partial:components/posts/text }}
+    {{ /if }}
+
+    {{ if type == "image" }}
+      {{ partial:components/posts/image }}
+    {{ /if }}
+
+    {{ if type == "image_text" }}
+      {{ partial:components/posts/image_text }}
+    {{ /if }}
+
+    {{ if type == "video" }}
+      {{ partial:components/posts/video }}
+    {{ /if }}
+  {{ /elements }}
+
+  {{ partial:components/cta }}
+
+</article>
