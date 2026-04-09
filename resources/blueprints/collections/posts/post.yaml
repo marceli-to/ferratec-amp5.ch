@@ -10,18 +10,26 @@ tabs:
             field:
               type: text
               required: true
+              localizable: false
+              validate:
+                - required
           -
             handle: date
             field:
               type: date
-              display: Date
               required: true
+              default: now
+              display: Date
+              localizable: false
+              validate:
+                - required
           -
             handle: teaser
             field:
               type: textarea
               display: Teaser
               instructions: 'Short text shown in the news overview on the homepage.'
+              localizable: false
           -
             handle: image
             field:
@@ -29,11 +37,14 @@ tabs:
               display: 'Hero Image'
               container: assets
               max_files: 1
+              localizable: false
           -
             handle: elements
             field:
               type: replicator
               display: Elements
+              localizable: false
+              collapse: true
               sets:
                 content:
                   display: Content
@@ -47,17 +58,25 @@ tabs:
                           field:
                             type: text
                             display: Heading
+                            localizable: false
                         -
                           handle: text
                           field:
                             type: bard
                             display: Text
                             buttons:
+                              - h2
+                              - h3
                               - bold
                               - italic
                               - unorderedlist
-                              - orderedlist
                               - anchor
+                            localizable: false
+                            toolbar_mode: floating
+                            link_collections:
+                              - posts
+                            container: assets
+                            remove_empty_nodes: false
                     image:
                       display: Image
                       icon: media-image
@@ -69,11 +88,13 @@ tabs:
                             display: Image
                             container: assets
                             max_files: 1
+                            localizable: false
                         -
                           handle: caption
                           field:
                             type: textarea
                             display: Caption
+                            localizable: false
                     image_text:
                       display: 'Image & Text'
                       icon: layout-sidebar-reverse
@@ -85,21 +106,25 @@ tabs:
                             display: Image
                             container: assets
                             max_files: 1
+                            localizable: false
                         -
                           handle: label
                           field:
                             type: text
                             display: Label
+                            localizable: false
                         -
                           handle: heading
                           field:
                             type: text
                             display: Heading
+                            localizable: false
                         -
                           handle: text
                           field:
                             type: textarea
                             display: Text
+                            localizable: false
                     video:
                       display: Video
                       icon: media-webcam
@@ -110,6 +135,7 @@ tabs:
                             type: text
                             display: 'Video URL'
                             instructions: 'URL to the video file (mp4).'
+                            localizable: false
                         -
                           handle: poster
                           field:
@@ -117,6 +143,7 @@ tabs:
                             display: 'Poster Image'
                             container: assets
                             max_files: 1
+                            localizable: false
   settings:
     display: Settings
     sections:
@@ -125,3 +152,14 @@ tabs:
         fields:
           -
             import: seo
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

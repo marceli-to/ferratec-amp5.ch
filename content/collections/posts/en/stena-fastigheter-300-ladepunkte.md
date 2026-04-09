@@ -13,7 +13,7 @@ elements:
         content:
           -
             type: text
-            text: 'Stena Fastigheter, one of Sweden''s largest property managers, has expanded its charging infrastructure with AMP5 to over 300 charging points. The charging stations were installed in existing multi-party garages — without complex civil engineering works and with minimal intervention in the building structure.'
+            text: "Stena Fastigheter, one of Sweden's largest property managers, has expanded its charging infrastructure with AMP5 to over 300 charging points. The charging stations were installed in existing multi-party garages — without complex civil engineering works and with minimal intervention in the building structure."
       -
         type: paragraph
         content:

@@ -3,7 +3,7 @@
   <div class="mt-16 md:mt-24 grid md:grid-cols-2 gap-px bg-zinc-200">
 
     {{ if image }}
-      <img src="{{ image }}" alt="" class="w-full h-full object-cover">
+      {{ partial:components/media/image :image="image" class="w-full h-full object-cover" sizes="(min-width: 768px) 50vw, 100vw" }}
     {{ /if }}
 
     <div class="bg-white p-8 md:p-12 flex flex-col justify-center">

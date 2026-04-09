@@ -1,0 +1,29 @@
+{{#
+  Responsive image component with WebP and srcset
+  @param image - Asset reference or image path
+  @param alt - Alt text
+  @param class - CSS classes for the img element
+  @param sizes - Sizes attribute (default: 100vw)
+  @param loading - Loading strategy: lazy or eager (default: lazy)
+#}}
+<picture>
+  <source
+    type="image/webp"
+    srcset="{{ glide src="{image}" width="400" format="webp" }} 400w,
+           {{ glide src="{image}" width="800" format="webp" }} 800w,
+           {{ glide src="{image}" width="1200" format="webp" }} 1200w,
+           {{ glide src="{image}" width="1600" format="webp" }} 1600w,
+           {{ glide src="{image}" width="2000" format="webp" }} 2000w"
+    sizes="{{ sizes ?? '100vw' }}">
+  <img
+    src="{{ glide src="{image}" width="1200" }}"
+    srcset="{{ glide src="{image}" width="400" }} 400w,
+           {{ glide src="{image}" width="800" }} 800w,
+           {{ glide src="{image}" width="1200" }} 1200w,
+           {{ glide src="{image}" width="1600" }} 1600w,
+           {{ glide src="{image}" width="2000" }} 2000w"
+    sizes="{{ sizes ?? '100vw' }}"
+    alt="{{ alt }}"
+    {{ if class }}class="{{ class }}"{{ /if }}
+    loading="{{ loading ?? 'lazy' }}">
+</picture>

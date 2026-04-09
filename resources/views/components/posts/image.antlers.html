@@ -2,7 +2,7 @@
 
   <div class="max-w-6xl mx-auto px-6">
 
-    <img src="{{ image }}" alt="" class="w-full">
+    {{ partial:components/media/image :image="image" class="w-full" sizes="(min-width: 1280px) 1152px, 100vw" }}
 
     {{ if caption }}
       <p class="text-sm text-zinc-400 mt-2">

@@ -67,7 +67,7 @@ return [
         */
 
         'defaults' => [
-            // 'quality' => 50,
+            'quality' => 80,
         ],
 
         /*
@@ -83,7 +83,10 @@ return [
         */
 
         'presets' => [
-            // 'small' => ['w' => 200, 'h' => 200, 'q' => 75, 'fit' => 'crop'],
+            'sm' => ['w' => 640, 'format' => 'webp'],
+            'md' => ['w' => 1024, 'format' => 'webp'],
+            'lg' => ['w' => 1536, 'format' => 'webp'],
+            'xl' => ['w' => 2000, 'format' => 'webp'],
         ],
 
         /*

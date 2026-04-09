@@ -8,7 +8,7 @@
     </a>
 
     {{ if image }}
-      <img src="{{ image }}" alt="" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover">
+      {{ partial:components/media/image :image="image" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover" loading="eager" }}
     {{ /if }}
 
   </div>

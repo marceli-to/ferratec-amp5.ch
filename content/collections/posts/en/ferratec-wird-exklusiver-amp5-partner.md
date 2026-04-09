@@ -30,7 +30,7 @@ elements:
         content:
           -
             type: text
-            text: 'AMP5 was born from the practical experience of a charging network operator. AmpSociety, the Swedish manufacturer, has direct roots in ChargeNode — Sweden''s largest charging station operator with over 60,000 charging points. Serviceability, reliability and easy component replacement in the field have been at the core of the development from the very beginning.'
+            text: "AMP5 was born from the practical experience of a charging network operator. AmpSociety, the Swedish manufacturer, has direct roots in ChargeNode — Sweden's largest charging station operator with over 60,000 charging points. Serviceability, reliability and easy component replacement in the field have been at the core of the development from the very beginning."
       -
         type: paragraph
         content:
@@ -40,13 +40,13 @@ elements:
   -
     id: block-1-3
     type: image_text
-    image: installations/AmpSociety_inspiration_Stena_webb_1.jpg
+    image: ampsociety-stena-installation.jpg
     label: 'Reference Project'
     heading: 'Stena Fastigheter, Sweden'
-    text: 'One of Sweden''s largest property managers relies on AMP5 — with over 300 charging points in multi-party garages. The installation was completed without civil engineering works, scaling via networked SmartHubs.'
+    text: "One of Sweden's largest property managers relies on AMP5 — with over 300 charging points in multi-party garages. The installation was completed without civil engineering works, scaling via networked SmartHubs."
   -
     id: block-1-4
     type: video
     video_url: /videos/amp5-demo.mp4
-    poster: product/Amp5_GarageParking.jpg
+    poster: amp5-garage-parking.jpg
 ---
