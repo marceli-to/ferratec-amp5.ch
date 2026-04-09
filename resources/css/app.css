@@ -7,3 +7,7 @@
   --font-dm: "DM Sans", system-ui, sans-serif;
   --color-accent: #ff6a13;
 }
+
+[x-cloak] {
+  display: none !important;
+}
