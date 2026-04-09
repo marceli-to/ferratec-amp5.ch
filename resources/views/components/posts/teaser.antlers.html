@@ -1,7 +1,15 @@
 <a href="{{ url }}" class="group">
+
   {{ if image }}
     <img src="{{ image }}" alt="" class="w-full aspect-[3/2] object-cover mb-4">
   {{ /if }}
-  <p class="text-xs text-zinc-400 mb-1">{{ date format="F Y" }}</p>
-  <h3 class="text-base font-semibold group-hover:text-accent transition-colors">{{ title }}</h3>
+
+  <p class="text-xs text-zinc-400 mb-1">
+    {{ date format="F Y" }}
+  </p>
+
+  <h3 class="text-base font-semibold group-hover:text-accent transition-colors">
+    {{ title }}
+  </h3>
+  
 </a>
