@@ -1,5 +1,5 @@
 <div class="relative" x-data="{ open: false }" @click.away="open = false">
-  <button @click="open = !open" class="cursor-pointer flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-1 text-xs text-zinc-400 hover:text-white hover:bg-white/10">
+  <button @click="open = !open" class="cursor-pointer flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-1 text-xs text-zinc-400 hover:text-white hover:bg-white/10" aria-label="{{ 'Sprache wählen' | trans }}">
     {{ partial:components/icons/globe class="size-3.5" }}
     {{ locales }}
       {{ if locale:key == site:handle }}
@@ -19,7 +19,7 @@
           </svg>
         </span>
       {{ else }}
-        <a href="{{ url }}" class="flex px-3 py-1.5 text-xs text-zinc-400 hover:text-white hover:bg-white/5">
+        <a href="{{ url }}" class="flex px-3 py-1.5 text-xs text-zinc-400 hover:text-white hover:bg-white/5" aria-label="{{ locale:name }}">
           {{ locale:name }}
         </a>
       {{ /if }}

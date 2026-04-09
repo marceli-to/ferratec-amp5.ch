@@ -11,19 +11,19 @@
   <nav class="max-w-6xl mx-auto px-6 py-8 text-lg text-zinc-400">
     <ul class="flex flex-col gap-4" role="list">
       <li>
-        <a href="{{ site:url }}#vorteile" class="hover:text-white" @click="mobileMenu = false">{{ "Vorteile" | trans }}</a>
+        <a href="{{ site:url }}#vorteile" class="hover:text-white" @click="mobileMenu = false" aria-label="{{ 'Vorteile' | trans }}">{{ "Vorteile" | trans }}</a>
       </li>
       <li>
-        <a href="{{ site:url }}#schulung" class="hover:text-white" @click="mobileMenu = false">{{ "Schulung" | trans }}</a>
+        <a href="{{ site:url }}#schulung" class="hover:text-white" @click="mobileMenu = false" aria-label="{{ 'Schulung' | trans }}">{{ "Schulung" | trans }}</a>
       </li>
       <li>
-        <a href="{{ site:url }}#planner" class="hover:text-white" @click="mobileMenu = false">{{ "Planner" | trans }}</a>
+        <a href="{{ site:url }}#planner" class="hover:text-white" @click="mobileMenu = false" aria-label="{{ 'Planner' | trans }}">{{ "Planner" | trans }}</a>
       </li>
       <li>
-        <a href="{{ site:url }}#news" class="hover:text-white" @click="mobileMenu = false">{{ "News" | trans }}</a>
+        <a href="{{ site:url }}#news" class="hover:text-white" @click="mobileMenu = false" aria-label="{{ 'News' | trans }}">{{ "News" | trans }}</a>
       </li>
       <li>
-        <a href="{{ site:url }}#kontakt" class="hover:text-white" @click="mobileMenu = false">{{ "Kontakt" | trans }}</a>
+        <a href="{{ site:url }}#kontakt" class="hover:text-white" @click="mobileMenu = false" aria-label="{{ 'Kontakt' | trans }}">{{ "Kontakt" | trans }}</a>
       </li>
     </ul>
   </nav>
@@ -37,7 +37,7 @@
             {{ locale:short | upper }}
           </span>
         {{ else }}
-          <a href="{{ url }}" class="hover:text-white">{{ locale:short | upper }}</a>
+          <a href="{{ url }}" class="hover:text-white" aria-label="{{ locale:name }}">{{ locale:short | upper }}</a>
         {{ /if }}
       {{ /locales }}
     </div>
