@@ -2,7 +2,7 @@
 id: post-2-it
 origin: post-2
 title: 'Stena Fastigheter amplia a 300 punti di ricarica'
-teaser: 'Il gestore immobiliare svedese Stena Fastigheter punta su AMP5 e gestisce ormai oltre 300 punti di ricarica in garage condominiali — senza lavori di ingegneria civile, con scalabilità tramite SmartHub collegati in rete.'
+teaser: 'Il gestore immobiliare svedese Stena Fastigheter punta su AMP5 e gestisce ormai oltre 300 punti di ricarica in garage condominiali – senza lavori di ingegneria civile, con scalabilità tramite SmartHub collegati in rete.'
 elements:
   -
     id: block-2-1
@@ -13,7 +13,7 @@ elements:
         content:
           -
             type: text
-            text: "Stena Fastigheter, uno dei maggiori gestori immobiliari della Svezia, ha ampliato la propria infrastruttura di ricarica con AMP5 a oltre 300 punti di ricarica. Le stazioni di ricarica sono state installate in garage condominiali esistenti — senza complessi lavori di ingegneria civile e con un intervento minimo sulla struttura dell'edificio."
+            text: "Stena Fastigheter, uno dei maggiori gestori immobiliari della Svezia, ha ampliato la propria infrastruttura di ricarica con AMP5 a oltre 300 punti di ricarica. Le stazioni di ricarica sono state installate in garage condominiali esistenti – senza complessi lavori di ingegneria civile e con un intervento minimo sulla struttura dell'edificio."
       -
         type: paragraph
         content:
@@ -30,5 +30,5 @@ elements:
         content:
           -
             type: text
-            text: "Grazie all'architettura cablata tramite la ConnectBar, viene eliminata la dipendenza dal Wi-Fi — un fattore decisivo nei parcheggi sotterranei. Il controllo centralizzato consente manutenzione remota, monitoraggio e aggiornamenti del firmware sull'intero impianto, senza che un tecnico debba essere presente sul posto."
+            text: "Grazie all'architettura cablata tramite la ConnectBar, viene eliminata la dipendenza dal Wi-Fi – un fattore decisivo nei parcheggi sotterranei. Il controllo centralizzato consente manutenzione remota, monitoraggio e aggiornamenti del firmware sull'intero impianto, senza che un tecnico debba essere presente sul posto."
 ---

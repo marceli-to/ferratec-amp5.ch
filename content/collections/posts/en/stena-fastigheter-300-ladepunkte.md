@@ -2,7 +2,7 @@
 id: post-2-en
 origin: post-2
 title: 'Stena Fastigheter Expands to 300 Charging Points'
-teaser: 'Swedish property manager Stena Fastigheter relies on AMP5 and now operates over 300 charging points in multi-party garages — without civil engineering works, scaled via networked SmartHubs.'
+teaser: 'Swedish property manager Stena Fastigheter relies on AMP5 and now operates over 300 charging points in multi-party garages – without civil engineering works, scaled via networked SmartHubs.'
 elements:
   -
     id: block-2-1
@@ -13,7 +13,7 @@ elements:
         content:
           -
             type: text
-            text: "Stena Fastigheter, one of Sweden's largest property managers, has expanded its charging infrastructure with AMP5 to over 300 charging points. The charging stations were installed in existing multi-party garages — without complex civil engineering works and with minimal intervention in the building structure."
+            text: "Stena Fastigheter, one of Sweden's largest property managers, has expanded its charging infrastructure with AMP5 to over 300 charging points. The charging stations were installed in existing multi-party garages – without complex civil engineering works and with minimal intervention in the building structure."
       -
         type: paragraph
         content:
@@ -30,5 +30,5 @@ elements:
         content:
           -
             type: text
-            text: 'Thanks to the wired architecture via the ConnectBar, there is no dependency on Wi-Fi — a decisive factor in underground parking garages. Central control enables remote maintenance, monitoring and firmware updates across the entire system, without a technician needing to be on site.'
+            text: 'Thanks to the wired architecture via the ConnectBar, there is no dependency on Wi-Fi – a decisive factor in underground parking garages. Central control enables remote maintenance, monitoring and firmware updates across the entire system, without a technician needing to be on site.'
 ---

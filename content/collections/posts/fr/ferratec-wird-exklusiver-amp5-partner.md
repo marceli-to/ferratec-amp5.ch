@@ -13,7 +13,7 @@ elements:
         content:
           -
             type: text
-            text: "Le partenariat entre Ferratec et AmpSociety apporte en Suisse une infrastructure de recharge spécialement conçue pour les exigences des parkings souterrains, des garages collectifs et des parkings extérieurs. Grâce à l'architecture câblée via la ConnectBar, la dépendance au Wi-Fi est éliminée — un avantage décisif dans les structures de stationnement souterraines."
+            text: "Le partenariat entre Ferratec et AmpSociety apporte en Suisse une infrastructure de recharge spécialement conçue pour les exigences des parkings souterrains, des garages collectifs et des parkings extérieurs. Grâce à l'architecture câblée via la ConnectBar, la dépendance au Wi-Fi est éliminée – un avantage décisif dans les structures de stationnement souterraines."
       -
         type: paragraph
         content:
@@ -30,7 +30,7 @@ elements:
         content:
           -
             type: text
-            text: "AMP5 est né de l'expérience pratique d'un opérateur de réseau de recharge. AmpSociety, le fabricant suédois, a des racines directes dans ChargeNode — le plus grand opérateur de bornes de recharge en Suède avec plus de 60 000 points de charge. La facilité de maintenance, la fiabilité et le remplacement simple des composants sur le terrain ont été au cœur du développement dès le départ."
+            text: "AMP5 est né de l'expérience pratique d'un opérateur de réseau de recharge. AmpSociety, le fabricant suédois, a des racines directes dans ChargeNode – le plus grand opérateur de bornes de recharge en Suède avec plus de 60 000 points de charge. La facilité de maintenance, la fiabilité et le remplacement simple des composants sur le terrain ont été au cœur du développement dès le départ."
       -
         type: paragraph
         content:
@@ -43,7 +43,7 @@ elements:
     image: ampsociety-stena-installation.jpg
     label: 'Projet de référence'
     heading: 'Stena Fastigheter, Suède'
-    text: "L'un des plus grands gestionnaires immobiliers de Suède mise sur AMP5 — avec plus de 300 points de charge dans des garages collectifs. L'installation s'est faite sans travaux de génie civil, la mise à l'échelle via des SmartHubs en réseau."
+    text: "L'un des plus grands gestionnaires immobiliers de Suède mise sur AMP5 – avec plus de 300 points de charge dans des garages collectifs. L'installation s'est faite sans travaux de génie civil, la mise à l'échelle via des SmartHubs en réseau."
   -
     id: block-1-4
     type: video

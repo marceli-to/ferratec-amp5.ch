@@ -13,7 +13,7 @@ elements:
         content:
           -
             type: text
-            text: "La partnership tra Ferratec e AmpSociety porta in Svizzera un'infrastruttura di ricarica sviluppata specificamente per le esigenze di parcheggi sotterranei, garage condominiali e parcheggi esterni. Grazie all'architettura cablata tramite la ConnectBar, viene eliminata la dipendenza dal Wi-Fi — un vantaggio decisivo nelle strutture di parcheggio sotterranee."
+            text: "La partnership tra Ferratec e AmpSociety porta in Svizzera un'infrastruttura di ricarica sviluppata specificamente per le esigenze di parcheggi sotterranei, garage condominiali e parcheggi esterni. Grazie all'architettura cablata tramite la ConnectBar, viene eliminata la dipendenza dal Wi-Fi – un vantaggio decisivo nelle strutture di parcheggio sotterranee."
       -
         type: paragraph
         content:
@@ -30,7 +30,7 @@ elements:
         content:
           -
             type: text
-            text: "AMP5 nasce dall'esperienza pratica di un operatore di rete di ricarica. AmpSociety, il produttore svedese, ha radici dirette in ChargeNode — il più grande operatore di stazioni di ricarica in Svezia con oltre 60'000 punti di ricarica. La facilità di manutenzione, l'affidabilità e la semplice sostituzione dei componenti sul campo sono stati al centro dello sviluppo fin dall'inizio."
+            text: "AMP5 nasce dall'esperienza pratica di un operatore di rete di ricarica. AmpSociety, il produttore svedese, ha radici dirette in ChargeNode – il più grande operatore di stazioni di ricarica in Svezia con oltre 60'000 punti di ricarica. La facilità di manutenzione, l'affidabilità e la semplice sostituzione dei componenti sul campo sono stati al centro dello sviluppo fin dall'inizio."
       -
         type: paragraph
         content:
@@ -43,7 +43,7 @@ elements:
     image: ampsociety-stena-installation.jpg
     label: 'Progetto di riferimento'
     heading: 'Stena Fastigheter, Svezia'
-    text: "Uno dei maggiori gestori immobiliari svedesi punta su AMP5 — con oltre 300 punti di ricarica in garage condominiali. L'installazione è avvenuta senza lavori di ingegneria civile, il dimensionamento tramite SmartHub collegati in rete."
+    text: "Uno dei maggiori gestori immobiliari svedesi punta su AMP5 – con oltre 300 punti di ricarica in garage condominiali. L'installazione è avvenuta senza lavori di ingegneria civile, il dimensionamento tramite SmartHub collegati in rete."
   -
     id: block-1-4
     type: video
