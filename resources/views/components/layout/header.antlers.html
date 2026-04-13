@@ -1,23 +1,4 @@
-
-
 <header class="sticky top-0 z-50 bg-zinc-900 text-white" x-data="{ mobileMenu: false }" @keydown.escape.window="mobileMenu = false">
-
-<div class="bg-accent text-white text-xs py-1.5 hidden md:block">
-  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
-    <span>
-      {{ "Exklusiv über Ferratec in der Schweiz" | trans }}
-    </span>
-    <div class="hidden sm:flex items-center gap-4">
-      <a href="tel:+41566492121" class="hover:text-white/80" aria-label="{{ 'Anrufen: 056 649 21 21' | trans }}">
-        056 649 21 21
-      </a>
-      <a href="mailto:info@ferratec.ch" class="hover:text-white/80" aria-label="{{ 'E-Mail senden an info@ferratec.ch' | trans }}">
-        info@ferratec.ch
-      </a>
-    </div>
-  </div>
-</div>
-
   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
     <a href="{{ site:url }}" class="flex items-center gap-6" aria-label="Homepage">
       {{ partial:components/icons/logo-ferratec class="h-6 w-auto brightness-0 invert" }}

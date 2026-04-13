@@ -7,7 +7,10 @@
       "Bash(shopt -s dotglob)",
       "Bash(mv tmp_statamic/* .)",
       "Bash(./please list:*)",
-      "Bash(php please:*)"
+      "Bash(php please:*)",
+      "Bash(wc -l /Users/marceli.to/Jamon.digital/Webroot/ferratec-amp5.ch/resources/views/components/**/*.antlers.html)",
+      "Bash(python3:*)",
+      "Bash(git add:*)"
     ]
   }
 }
