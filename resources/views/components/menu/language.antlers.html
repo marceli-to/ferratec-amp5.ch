@@ -1,5 +1,5 @@
 <div class="relative" x-data="{ open: false }" @click.away="open = false">
-  <button @click="open = !open" class="cursor-pointer flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-1 text-xs text-zinc-400 hover:text-white hover:bg-white/10" aria-label="{{ 'Sprache wählen' | trans }}">
+  <button @click="open = !open" class="cursor-pointer flex items-center gap-1.5 rounded-full bg-zinc-100 px-2.5 py-1 text-xs text-zinc-500 hover:text-zinc-900 hover:bg-zinc-200" aria-label="{{ 'Sprache wählen' | trans }}">
     {{ partial:components/icons/globe class="size-3.5" }}
     {{ locales }}
       {{ if locale:key == site:handle }}
@@ -9,17 +9,17 @@
       {{ /if }}
     {{ /locales }}
   </button>
-  <div x-show="open" x-cloak class="absolute right-0 top-full mt-2 w-36 rounded-lg bg-zinc-800 py-1 shadow-lg ring-1 ring-white/10">
+  <div x-show="open" x-cloak class="absolute right-0 top-full mt-2 w-36 rounded-lg bg-white py-1 shadow-lg ring-1 ring-zinc-200">
     {{ locales }}
       {{ if locale:key == site:handle }}
-        <span class="flex items-center justify-between px-3 py-1.5 text-xs text-white font-medium">
+        <span class="flex items-center justify-between px-3 py-1.5 text-xs text-zinc-900 font-medium">
           {{ locale:name }}
           <svg class="size-3.5 text-accent" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
           </svg>
         </span>
       {{ else }}
-        <a href="{{ url }}" class="flex px-3 py-1.5 text-xs text-zinc-400 hover:text-white hover:bg-white/5" aria-label="{{ locale:name }}">
+        <a href="{{ url }}" class="flex px-3 py-1.5 text-xs text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50" aria-label="{{ locale:name }}">
           {{ locale:name }}
         </a>
       {{ /if }}

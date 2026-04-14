@@ -1,7 +1,7 @@
-<header class="sticky top-0 z-50 bg-zinc-900 text-white" x-data="{ mobileMenu: false }" @keydown.escape.window="mobileMenu = false">
+<header class="sticky top-0 z-50 bg-white border-b border-zinc-200 text-zinc-900" x-data="{ mobileMenu: false }" @keydown.escape.window="mobileMenu = false">
   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
     <a href="{{ site:url }}" class="flex items-center gap-6" aria-label="Homepage">
-      {{ partial:components/icons/logo-ferratec class="h-6 w-auto brightness-0 invert" }}
+      {{ partial:components/icons/logo-ferratec class="h-6 w-auto" }}
       {{ partial:components/icons/logo-ampsociety class="h-5 w-auto" }}
     </a>
 
