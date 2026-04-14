@@ -10,7 +10,7 @@ tabs:
             field:
               type: text
               required: true
-              localizable: false
+              localizable: true
               validate:
                 - required
           -
@@ -20,7 +20,7 @@ tabs:
               required: true
               default: now
               display: Date
-              localizable: false
+              localizable: true
               validate:
                 - required
           -
@@ -29,7 +29,7 @@ tabs:
               type: textarea
               display: Teaser
               instructions: 'Short text shown in the news overview on the homepage.'
-              localizable: false
+              localizable: true
           -
             handle: image
             field:
@@ -37,13 +37,13 @@ tabs:
               display: 'Hero Image'
               container: assets
               max_files: 1
-              localizable: false
+              localizable: true
           -
             handle: elements
             field:
               type: replicator
               display: Elements
-              localizable: false
+              localizable: true
               collapse: true
               sets:
                 content:
@@ -51,7 +51,7 @@ tabs:
                   sets:
                     text:
                       display: Text
-                      icon: text
+                      icon: fieldtype-text
                       fields:
                         -
                           handle: heading
@@ -79,7 +79,7 @@ tabs:
                             remove_empty_nodes: false
                     image:
                       display: Image
-                      icon: media-image
+                      icon: media-image-camera
                       fields:
                         -
                           handle: image
@@ -97,7 +97,7 @@ tabs:
                             localizable: false
                     image_text:
                       display: 'Image & Text'
-                      icon: layout-sidebar-reverse
+                      icon: hero-image-above-text
                       fields:
                         -
                           handle: image
@@ -127,7 +127,7 @@ tabs:
                             localizable: false
                     video:
                       display: Video
-                      icon: media-webcam
+                      icon: movie-video-clip
                       fields:
                         -
                           handle: video_url

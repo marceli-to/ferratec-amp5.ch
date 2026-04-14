@@ -6,10 +6,28 @@
     <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight mb-8 max-w-[18ch]">
       {{ "Ladeinfrastruktur. Als System gedacht." | trans }}
     </h1>
-    <p class="text-lg text-zinc-500 mb-8 max-w-[62ch]">
+    <p class="text-lg text-zinc-500 mb-4 max-w-[62ch]">
       {{ "Modular von einem bis zu mehreren hundert Ladepunkten. Zentral gesteuert, kabelgebunden statt funkbasiert, mit minimalem Installationsaufwand. Geplant für über 20 Jahre Betrieb – erweiterbar, wartbar und zukunftssicher in Modulen. Vertrieben, geschult und betreut durch Ferratec Technics AG, Ihren Schweizer Spezialisten für E-Mobility-Lösungen." | trans }}
     </p>
-    <div class="flex flex-wrap gap-3 mb-6">
+    <ul class="space-y-3 text-md text-zinc-500 mb-8" role="list">
+      <li class="flex gap-3">
+        <span class="text-accent font-semibold shrink-0 leading-relaxed">–</span>
+        <span class="leading-relaxed">{{ "Installation durch geschulte Schweizer Partner" | trans }}</span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-accent font-semibold shrink-0 leading-relaxed">–</span>
+        <span class="leading-relaxed">{{ "Abrechnung mit eponet" | trans }}</span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-accent font-semibold shrink-0 leading-relaxed">–</span>
+        <span class="leading-relaxed">{{ "5 Jahre Garantie" | trans }}</span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-accent font-semibold shrink-0 leading-relaxed">–</span>
+        <span class="leading-relaxed">{{ "20+ Jahre Lebensdauer" | trans }}</span>
+      </li>
+    </ul>
+    <div class="flex flex-wrap gap-3 mb-12 lg:mb-16">
       <a href="#kontakt" class="bg-accent text-white px-5 py-3 text-sm font-semibold hover:bg-orange-600 transition-colors" aria-label="{{ 'Beratung anfragen' | trans }}">
         {{ "Beratung anfragen" | trans }} →
       </a>
@@ -17,9 +35,6 @@
         {{ "AMP5 entdecken" | trans }}
       </a>
     </div>
-    <p class="text-sm text-zinc-400 mb-12 lg:mb-16">
-      {{ "Installation durch geschulte Schweizer Partner · Abrechnung mit eponet · 5 Jahre Garantie · 20+ Jahre Lebensdauer" | trans }}
-    </p>
     {{ partial:components/media/image image="/assets/amp5-garage-parking.jpg" alt="{ 'AMP5 Ladesystem in einer Tiefgarage mit mehreren Ladepunkten' | trans }" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover" loading="eager" }}
   </div>
 </section>

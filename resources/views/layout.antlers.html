@@ -3,7 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ title }} – AMP5 | Ferratec</title>
+{{ if is_homepage }}<title>AMP5 • Ferratec</title>{{ else }}<title>{{ title }} – AMP5 • Ferratec</title>{{ /if }}
+{{ if meta_description }}<meta name="description" content="{{ meta_description }}">{{ /if }}
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ current_url }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ current_url }}">
+{{ if is_homepage }}<meta property="og:title" content="AMP5 • Ferratec">{{ else }}<meta property="og:title" content="{{ title }} – AMP5 • Ferratec">{{ /if }}
+{{ if meta_description }}<meta property="og:description" content="{{ meta_description }}">{{ /if }}
+<meta property="og:image" content="{{ config:app:url }}/opengraph.jpg">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="AMP5 – Ferratec" />
+<link rel="manifest" href="/site.webmanifest" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..800&display=swap" rel="stylesheet">
