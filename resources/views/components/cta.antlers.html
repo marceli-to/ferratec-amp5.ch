@@ -1,18 +1,46 @@
 <section id="kontakt" class="scroll-mt-13 py-16 md:py-24 bg-accent text-white">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-4xl md:text-6xl font-semibold tracking-tight text-balance mx-auto max-w-[24ch]">
-      {{ "Bereit für AMP5 in Ihrem Projekt?" | trans }}
-    </h2>
-    <p class="text-white/70 mt-5 mx-auto max-w-[48ch] text-lg text-pretty">
-      {{ "Wir beraten Bauherren, Verwaltungen, Installateure und Flottenbetreiber – unverbindlich und auf Schweizerdeutsch." | trans }}
-    </p>
-    <div class="mt-10 flex flex-wrap justify-center gap-3">
-      <a href="mailto:info@ferratec.ch" class="bg-white text-zinc-900 px-6 py-3.5 text-sm font-semibold hover:bg-zinc-100 transition-colors" aria-label="{{ 'E-Mail senden an info@ferratec.ch' | trans }}">
-        info@ferratec.ch
-      </a>
-      <a href="tel:+41566492121" class="border border-white/40 text-white px-6 py-3.5 text-sm hover:border-white transition-colors" aria-label="{{ 'Anrufen: 056 649 21 21' | trans }}">
-        056 649 21 21
-      </a>
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-10 gap-12 lg:gap-16 items-start">
+      <div class="lg:col-span-5">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-balance max-w-[18ch]">
+          {{ "Bereit für AMP5 in Ihrem Projekt?" | trans }}
+        </h2>
+        <p class="text-white/70 mt-5 max-w-[56ch] text-lg text-pretty">
+          {{ "Wir beraten Bauherren, Verwaltungen, Installateure und Flottenbetreiber – unverbindlich und auf Schweizerdeutsch." | trans }}
+        </p>
+      </div>
+      <ul class="lg:col-span-5 flex flex-col divide-y divide-white/15" role="list">
+        <li class="py-5 first:pt-0 flex items-center gap-4">
+          <div class="size-14 shrink-0 overflow-hidden">
+            {{ partial:components/media/image image="/assets/team-peter-muster.jpg" alt="" class="w-full h-full object-cover" sizes="56px" }}
+          </div>
+          <div class="min-w-0">
+            <h3 class="text-base font-semibold tracking-tight text-white">Peter Muster</h3>
+            <a href="mailto:peter.muster@ferratec.ch" class="block text-sm text-white/90 hover:text-white transition-colors break-all" aria-label="E-Mail an Peter Muster">peter.muster@ferratec.ch</a>
+            <a href="tel:+41563343030" class="block text-sm text-white/90 hover:text-white transition-colors tabular-nums" aria-label="Peter Muster anrufen">056 334 30 30</a>
+          </div>
+        </li>
+        <li class="py-5 flex items-center gap-4">
+          <div class="size-14 shrink-0 overflow-hidden">
+            {{ partial:components/media/image image="/assets/team-fritz-meierhofer.jpg" alt="" class="w-full h-full object-cover" sizes="56px" }}
+          </div>
+          <div class="min-w-0">
+            <h3 class="text-base font-semibold tracking-tight text-white">Fritz Meierhofer</h3>
+            <a href="mailto:fritz.meierhofer@ferratec.ch" class="block text-sm text-white/90 hover:text-white transition-colors break-all" aria-label="E-Mail an Fritz Meierhofer">fritz.meierhofer@ferratec.ch</a>
+            <a href="tel:+41563343031" class="block text-sm text-white/90 hover:text-white transition-colors tabular-nums" aria-label="Fritz Meierhofer anrufen">056 334 30 31</a>
+          </div>
+        </li>
+        <li class="py-5 flex items-center gap-4">
+          <div class="size-14 shrink-0 overflow-hidden">
+            {{ partial:components/media/image image="/assets/team-hanspeter-buehler.jpg" alt="" class="w-full h-full object-cover" sizes="56px" }}
+          </div>
+          <div class="min-w-0">
+            <h3 class="text-base font-semibold tracking-tight text-white">Hanspeter Bühler</h3>
+            <a href="mailto:hanspeter.buehler@ferratec.ch" class="block text-sm text-white/90 hover:text-white transition-colors break-all" aria-label="E-Mail an Hanspeter Bühler">hanspeter.buehler@ferratec.ch</a>
+            <a href="tel:+41563343032" class="block text-sm text-white/90 hover:text-white transition-colors tabular-nums" aria-label="Hanspeter Bühler anrufen">056 334 30 32</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
