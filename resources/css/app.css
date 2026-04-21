@@ -4,8 +4,11 @@
 @source "../../content";
 
 @theme {
-  --font-dm: "DM Sans", system-ui, sans-serif;
-  --color-accent: #ff6a13;
+  --font-sans: "Roboto", system-ui, sans-serif;
+  --color-accent: #ec6608;
+  --color-brand-orange: #ec6608;
+  --color-brand-green: #1d8649;
+  --color-brand-red: #f7505e;
 }
 
 [x-cloak] {

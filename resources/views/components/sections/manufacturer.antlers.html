@@ -7,7 +7,8 @@
         </span>
       </div>
       <div>
-        <p class="text-sm text-zinc-500 mb-4">
+        {{ partial:components/layout/brand-stripe class="mb-2" }}
+        <p class="text-sm font-semibold text-brand-green mb-4">
           {{ "Hersteller" | trans }}
         </p>
         <h2 class="text-4xl font-semibold tracking-tight mb-6">
@@ -19,7 +20,7 @@
         <p class="text-zinc-500 mb-6">
           {{ "AMP5 ist aus der Praxis eines Ladenetzbetreibers heraus entstanden. Jede Designentscheidung – von der kabelgebundenen ConnectBar über die modulare Bauteilstruktur bis zum nativen OCPP 2.0.1 – adressiert ein konkretes Problem aus dem täglichen Betrieb: Servicefreundlichkeit, Ausfallsicherheit, einfacher Komponententausch im Feld. Kein Lab-Produkt, sondern Hardware, die unter realen Betriebsbedingungen iteriert wurde – robust, langlebig, reduziert auf das Wesentliche." | trans }}
         </p>
-        <a href="https://www.ampsociety.com" target="_blank" rel="noopener" class="text-sm font-semibold text-accent hover:text-orange-600 transition-colors" aria-label="{{ 'Besuche ampsociety.com' | trans }}">
+        <a href="https://www.ampsociety.com" target="_blank" rel="noopener" class="text-sm font-semibold text-brand-orange hover:brightness-90 transition-[filter]" aria-label="{{ 'Besuche ampsociety.com' | trans }}">
           ampsociety.com besuchen →
         </a>
       </div>
