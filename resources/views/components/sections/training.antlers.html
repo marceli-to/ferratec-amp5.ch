@@ -1,107 +1,89 @@
 <section id="schulung" class="scroll-mt-13">
   <div class="bg-zinc-900 py-16 md:py-24">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12 items-start">
-        <div>
-          <p class="text-sm text-brand-orange mb-4">
-            {{ "Für Elektroinstallateure" | trans }}
-          </p>
-          <h2 class="text-4xl font-semibold tracking-tight text-white mb-4 text-balance">
-            {{ "Partner werden. AMP5 installieren." | trans }}
-          </h2>
-          <p class="text-zinc-400 text-pretty">
-            {{ "Ferratec baut in der Schweiz ein Netzwerk von Elektroinstallateuren auf, die AMP5 planen, installieren und in Betrieb nehmen. Als Partner erhalten Sie Schulung, direkten technischen Support aus Rudolfstetten und Zugang zu Projekten aus unserem Marketing." | trans }}
-          </p>
-        </div>
-        <div class="border border-zinc-700 p-8">
-          <p class="text-xs tracking-widest uppercase text-brand-orange font-semibold mb-4">
-            {{ "Nächste Schulung" | trans }}
-          </p>
-          <h3 class="text-xl font-semibold text-white mb-4">
-            {{ "AMP5 Partner-Schulung" | trans }}
-          </h3>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-orange/15 text-brand-orange">Online</span>
-            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-orange/15 text-brand-orange">90 Min.</span>
-            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-orange/15 text-brand-orange">9:00 – 10:30 Uhr</span>
-          </div>
-          <ul class="space-y-3 text-sm text-zinc-400 mb-6" role="list">
-            <li class="flex gap-3">
-              <span class="text-brand-orange font-semibold shrink-0">–</span>
-              <span>{{ "AMP5 im Überblick – Systemaufbau und Positionierung" | trans }}</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="text-brand-orange font-semibold shrink-0">–</span>
-              <span>{{ "Technik verstehen – Architektur, Lastmanagement, Abrechnung" | trans }}</span>
-            </li>
-            <li class="flex gap-3">
-              <span class="text-brand-orange font-semibold shrink-0">–</span>
-              <span>{{ "Projekte gewinnen – von der Anfrage zur erfolgreichen Installation" | trans }}</span>
-            </li>
-          </ul>
-          <a
-            href="https://www.eventbrite.de/e/amp5-ladeinfrastruktur-als-system-gedacht-tickets-1986880447905?aff=oddtdtcreator"
-            class="inline-flex bg-brand-orange text-white px-5 py-3 text-sm font-semibold hover:brightness-90 transition-[filter]"
-            aria-label="{{ 'Jetzt anmelden' | trans }}"
-            target="_blank"
-            rel="noopener noreferrer">
-            {{ "Jetzt anmelden" | trans }} →
-          </a>
-        </div>
+      <div class="max-w-3xl mb-12 md:mb-16">
+        <p class="text-sm text-brand-orange mb-4">
+          {{ "Für Elektroinstallateure" | trans }}
+        </p>
+        <h2 class="text-4xl font-semibold tracking-tight text-white mb-4 text-balance">
+          {{ "Partner werden. AMP5 installieren." | trans }}
+        </h2>
+        <p class="text-zinc-400 text-pretty">
+          {{ "Ferratec baut in der Schweiz ein Netzwerk von Elektroinstallateuren auf, die AMP5 planen, installieren und in Betrieb nehmen. Als Partner erhalten Sie Schulung, direkten technischen Support aus Rudolfstetten und Zugang zu Projekten aus unserem Marketing." | trans }}
+        </p>
       </div>
-    </div>
-  </div>
-  <div class="bg-white py-16 md:py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      {{ partial:components/layout/brand-stripe class="mb-4" }}
-      <h3 class="text-4xl font-semibold tracking-tight mb-12">
+
+      <h3 class="text-2xl font-semibold tracking-tight text-white _mb-5">
         {{ "Weniger Aufwand. Mehr Marge." | trans }}
       </h3>
-      <div class="grid md:grid-cols-2 gap-px bg-zinc-200">
-        <div class="bg-white py-8 md:py-8 md:pr-8">
-          <span class="text-sm text-brand-green font-semibold tabular-nums">
+      <div class="grid md:grid-cols-2 gap-px bg-zinc-800 mb-16 md:mb-20">
+        <div class="bg-zinc-900 py-8 md:py-8 md:pr-8">
+          <span class="text-sm text-brand-orange font-semibold tabular-nums">
             01
           </span>
-          <h4 class="text-xl font-semibold mt-3 mb-3">
+          <h4 class="text-xl font-semibold text-white mt-3 mb-3">
             {{ "Schnelle Inbetriebnahme" | trans }}
           </h4>
-          <p class="text-zinc-500">
+          <p class="text-zinc-400">
             {{ "Montieren. Anschliessen. Läuft. – kein WLAN-Chaos in der Tiefgarage" | trans }}
           </p>
         </div>
-        <div class="bg-white py-8 md:p-8">
-          <span class="text-sm text-brand-green font-semibold tabular-nums">
+        <div class="bg-zinc-900 py-8 md:p-8">
+          <span class="text-sm text-brand-orange font-semibold tabular-nums">
             02
           </span>
-          <h4 class="text-xl font-semibold mt-3 mb-3">
+          <h4 class="text-xl font-semibold text-white mt-3 mb-3">
             {{ "20 Jahre Ruhe" | trans }}
           </h4>
-          <p class="text-zinc-500">
+          <p class="text-zinc-400">
             {{ "Das System, das keine Rückrufe kennt – einmal installiert, langfristig zuverlässig" | trans }}
           </p>
         </div>
-        <div class="bg-white py-8 md:py-8 md:pr-8">
-          <span class="text-sm text-brand-green font-semibold tabular-nums">
+        <div class="bg-zinc-900 py-8 md:py-8 md:pr-8">
+          <span class="text-sm text-brand-orange font-semibold tabular-nums">
             03
           </span>
-          <h4 class="text-xl font-semibold mt-3 mb-3">
+          <h4 class="text-xl font-semibold text-white mt-3 mb-3">
             {{ "Ganze Projekte" | trans }}
           </h4>
-          <p class="text-zinc-500">
+          <p class="text-zinc-400">
             {{ "Schluss mit Box-für-Box – Sie planen und installieren ganze Projekte statt einzelne Wallboxen" | trans }}
           </p>
         </div>
-        <div class="bg-white py-8 md:p-8">
-          <span class="text-sm text-brand-green font-semibold tabular-nums">
+        <div class="bg-zinc-900 py-8 md:p-8">
+          <span class="text-sm text-brand-orange font-semibold tabular-nums">
             04
           </span>
-          <h4 class="text-xl font-semibold mt-3 mb-3">
+          <h4 class="text-xl font-semibold text-white mt-3 mb-3">
             {{ "Ferratec im Rücken" | trans }}
           </h4>
-          <p class="text-zinc-500">
+          <p class="text-zinc-400">
             {{ "Schulung, Hotline zum Schweizer Tech-Team, Lead-Weiterleitung aus unserem Marketing" | trans }}
           </p>
         </div>
+      </div>
+
+      <div class="border-l-4 border-brand-orange bg-brand-orange/5 p-6 md:p-8 grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-center">
+        <div>
+          <p class="text-xs tracking-widest uppercase text-brand-orange font-semibold mb-2">
+            {{ "Nächste Schulung" | trans }}
+          </p>
+          <h3 class="text-xl font-semibold text-white">
+            {{ "AMP5 Partner-Schulung" | trans }}
+          </h3>
+        </div>
+        <div class="flex flex-wrap gap-2 md:justify-center">
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-orange/15 text-brand-orange">Online</span>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-orange/15 text-brand-orange">90 Min.</span>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-brand-orange/15 text-brand-orange">9:00 – 10:30 Uhr</span>
+        </div>
+        <a
+          href="https://www.eventbrite.de/e/amp5-ladeinfrastruktur-als-system-gedacht-tickets-1986880447905?aff=oddtdtcreator"
+          class="inline-flex bg-brand-orange text-white px-5 py-3 text-sm font-semibold hover:brightness-90 transition-[filter] self-start md:self-center"
+          target="_blank"
+          rel="noopener noreferrer">
+          {{ "Jetzt anmelden" | trans }} →
+        </a>
       </div>
     </div>
   </div>
