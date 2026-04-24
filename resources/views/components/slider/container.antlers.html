@@ -1,0 +1,18 @@
+{{#
+  Swiper slider container. Wrap {{ partial:components/slider/slide }} partials inside.
+  @param class - CSS classes applied to the wrapper
+#}}
+<div data-slider{{ if class }} class="{{ class }}"{{ /if }}>
+  <div class="swiper relative">
+    <div class="swiper-wrapper">
+      {{ slot }}
+    </div>
+    <button type="button" data-slider-prev aria-label="{{ 'Vorheriges Bild' | trans }}" class="absolute left-3 md:left-4 top-1/2 z-10 -translate-y-1/2 text-accent hover:text-orange-700 transition-colors cursor-pointer drop-shadow-md">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 md:w-12 md:h-12" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button type="button" data-slider-next aria-label="{{ 'Nächstes Bild' | trans }}" class="absolute right-3 md:right-4 top-1/2 z-10 -translate-y-1/2 text-accent hover:text-orange-700 transition-colors cursor-pointer drop-shadow-md">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 md:w-12 md:h-12" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+  <div data-slider-pagination class="text-center mt-4"></div>
+</div>

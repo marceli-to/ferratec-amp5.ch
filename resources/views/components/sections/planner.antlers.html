@@ -30,10 +30,8 @@
           {{ "Planer öffnen" | trans }}
         </a>
       </div>
-      <div class="aspect-[4/3] bg-zinc-100 flex items-center justify-center">
-        <span class="text-sm text-zinc-400">
-          {{ "Platzhalter: Screenshot amp5-planer.ch" | trans }}
-        </span>
+      <div class="aspect-[4/3] bg-zinc-100 overflow-hidden">
+        {{ partial:components/media/image image="/assets/amp5-planer.jpg" alt="{ 'Screenshot des AMP5 Planners mit Projektkonfiguration' | trans }" class="w-full h-full object-cover" sizes="(min-width: 768px) 50vw, 100vw" }}
       </div>
     </div>
   </div>

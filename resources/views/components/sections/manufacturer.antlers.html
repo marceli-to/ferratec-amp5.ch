@@ -1,10 +1,8 @@
 <section class="py-16 md:py-24 bg-zinc-50">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-      <div class="aspect-[4/3] bg-zinc-200 flex items-center justify-center">
-        <span class="text-sm text-zinc-400">
-          {{ "Platzhalter: AMP5 Produktbild" | trans }}
-        </span>
+      <div class="aspect-[4/3] bg-zinc-200 overflow-hidden">
+        {{ partial:components/media/image image="/assets/fossilfreie-zukunft-clean.jpg" alt="{ 'AMP5 Ladesystem im Einsatz' | trans }" class="w-full h-full object-cover" sizes="(min-width: 768px) 50vw, 100vw" }}
       </div>
       <div>
         {{ partial:components/layout/brand-stripe class="mb-2" }}

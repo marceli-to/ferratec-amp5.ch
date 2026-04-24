@@ -18,3 +18,11 @@
 .post h2 {
   @apply text-2xl font-semibold tracking-tight text-zinc-900 pt-4
 }
+
+[data-slider] {
+  --swiper-pagination-color: var(--color-accent);
+  --swiper-pagination-bullet-inactive-color: #d4d4d8;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}

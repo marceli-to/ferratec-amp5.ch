@@ -1,0 +1,16 @@
+{{#
+  Single slider slide with a responsive image.
+  @param image - Image path (e.g. /assets/slider-01.jpg)
+  @param alt - Alt text
+  @param class - CSS classes for the img element
+  @param sizes - Sizes attribute
+  @param loading - lazy or eager (default: lazy)
+#}}
+<div class="swiper-slide">
+  {{ partial:components/media/image
+     image="{image}"
+     alt="{alt}"
+     class="{class}"
+     sizes="{sizes}"
+     loading="{loading}" }}
+</div>
