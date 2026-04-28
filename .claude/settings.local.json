@@ -10,7 +10,14 @@
       "Bash(php please:*)",
       "Bash(wc -l /Users/marceli.to/Jamon.digital/Webroot/ferratec-amp5.ch/resources/views/components/**/*.antlers.html)",
       "Bash(python3:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(cp /Users/marceli.to/Desktop/peter-muster.jpg /Users/marceli.to/Jamon.digital/Webroot/ferratec-amp5.ch/public/assets/team-peter-muster.jpg)",
+      "Bash(cp /Users/marceli.to/Desktop/hans-meier.jpg /Users/marceli.to/Jamon.digital/Webroot/ferratec-amp5.ch/public/assets/team-fritz-meierhofer.jpg)",
+      "Bash(cp /Users/marceli.to/Desktop/fritz-buehler.jpg /Users/marceli.to/Jamon.digital/Webroot/ferratec-amp5.ch/public/assets/team-hanspeter-buehler.jpg)",
+      "Bash(npm run *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git pull *)",
+      "Bash(git rev-list *)"
     ]
   }
 }
