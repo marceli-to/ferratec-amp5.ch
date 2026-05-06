@@ -84,7 +84,16 @@ return [
         'class' => null,
 
         'rules' => [
-            //
+            'collections' => [
+                'posts' => [
+                    'urls' => [
+                        '/',
+                        '/en',
+                        '/fr',
+                        '/it',
+                    ],
+                ],
+            ],
         ],
 
     ],
