@@ -5,10 +5,9 @@
 
 @theme {
   --font-sans: "Roboto", system-ui, sans-serif;
-  --color-accent: #ec6608;
-  --color-brand-orange: #ec6608;
-  --color-brand-green: #1d8649;
-  --color-brand-red: #f7505e;
+  --color-accent: #ea5901;
+  --color-brand-orange: #ea5901;
+  --color-brand-green: #2a5556;
 }
 
 [x-cloak] {
