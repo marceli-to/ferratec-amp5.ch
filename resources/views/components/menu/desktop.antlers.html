@@ -9,6 +9,11 @@
     <a href="{{ site:url }}#planner" class="hover:text-zinc-900" aria-label="{{ 'Planner' | trans }}">
       {{ "Planner" | trans }}
     </a>
+    {{ if downloads:heading || downloads:files }}
+      <a href="{{ site:url }}#downloads" class="hover:text-zinc-900" aria-label="{{ 'Downloads' | trans }}">
+        {{ "Downloads" | trans }}
+      </a>
+    {{ /if }}
     <a href="{{ site:url }}#news" class="hover:text-zinc-900" aria-label="{{ 'News' | trans }}">
       {{ "News" | trans }}
     </a>

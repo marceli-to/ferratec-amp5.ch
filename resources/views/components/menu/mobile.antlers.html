@@ -19,6 +19,11 @@
       <li>
         <a href="{{ site:url }}#planner" class="hover:text-zinc-900" @click="mobileMenu = false" aria-label="{{ 'Planner' | trans }}">{{ "Planner" | trans }}</a>
       </li>
+      {{ if downloads:heading || downloads:files }}
+        <li>
+          <a href="{{ site:url }}#downloads" class="hover:text-zinc-900" @click="mobileMenu = false" aria-label="{{ 'Downloads' | trans }}">{{ "Downloads" | trans }}</a>
+        </li>
+      {{ /if }}
       <li>
         <a href="{{ site:url }}#news" class="hover:text-zinc-900" @click="mobileMenu = false" aria-label="{{ 'News' | trans }}">{{ "News" | trans }}</a>
       </li>
