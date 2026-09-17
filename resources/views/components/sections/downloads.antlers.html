@@ -1,0 +1,52 @@
+{{# Download area. Maintained in the CP under Globals → Downloads. #}}
+{{ if downloads:heading || downloads:files }}
+  <section id="downloads" class="scroll-mt-13">
+    <div class="bg-zinc-900 py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <div class="max-w-3xl mb-12 md:mb-16">
+          <p class="text-sm text-brand-orange mb-4">
+            {{ "Downloads" | trans }}
+          </p>
+          {{ if downloads:heading }}
+            <h2 class="text-4xl font-semibold tracking-tight text-white mb-4 text-balance">
+              {{ downloads:heading }}
+            </h2>
+          {{ /if }}
+          {{ if downloads:text }}
+            <div class="space-y-4 text-zinc-400 text-pretty">
+              {{ downloads:text }}
+            </div>
+          {{ /if }}
+        </div>
+
+        {{ if downloads:files }}
+          <ul class="divide-y divide-zinc-800" role="list">
+            {{ downloads:files }}
+              {{ if file }}
+                <li class="group">
+                  <a
+                    href="{{ file:url }}"
+                    download
+                    class="flex items-start justify-between gap-6 py-8 group-first:pt-0"
+                    aria-label="{{ 'Datei herunterladen' | trans }}: {{ label ?? file:basename }}">
+                    <div class="min-w-0">
+                      <p class="text-sm text-brand-orange font-semibold tabular-nums">
+                        {{ file:extension | upper }} · {{ file:size }}
+                      </p>
+                      <h3 class="text-xl font-semibold text-white mt-3 group-hover:text-brand-orange transition-colors">
+                        {{ label ?? file:basename }}
+                      </h3>
+                    </div>
+                    {{ partial:components/icons/icon-arrow-down-tray class="size-4 shrink-0 fill-brand-orange group-hover:translate-y-0.5 transition-transform" }}
+                  </a>
+                </li>
+              {{ /if }}
+            {{ /downloads:files }}
+          </ul>
+        {{ /if }}
+
+      </div>
+    </div>
+  </section>
+{{ /if }}

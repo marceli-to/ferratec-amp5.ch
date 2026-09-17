@@ -1,0 +1,52 @@
+title: Downloads
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+      instructions: 'Title of the download area. Leave empty to hide the whole section.'
+      localizable: true
+  -
+    handle: text
+    field:
+      type: bard
+      display: Text
+      instructions: 'Short introduction shown above the file list.'
+      localizable: true
+      buttons:
+        - bold
+        - italic
+        - unorderedlist
+        - anchor
+      toolbar_mode: floating
+      link_collections:
+        - posts
+      container: assets
+      remove_empty_nodes: false
+  -
+    handle: files
+    field:
+      type: grid
+      display: Files
+      instructions: 'The downloadable files, in the order they should appear.'
+      localizable: true
+      mode: stacked
+      reorderable: true
+      add_row: 'Add file'
+      fields:
+        -
+          handle: label
+          field:
+            type: text
+            display: Label
+            instructions: 'Shown as the link text. Falls back to the file name if empty.'
+        -
+          handle: file
+          field:
+            type: assets
+            display: File
+            container: assets
+            max_files: 1
+            validate:
+              - required
