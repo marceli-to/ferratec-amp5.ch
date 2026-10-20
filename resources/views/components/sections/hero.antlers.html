@@ -37,6 +37,16 @@
       <strong class="font-semibold text-zinc-900">{{ "Günstiger als Einzel-Wallboxen – und beim Ausbau noch deutlicher." | trans }}</strong>
       {{ "Weniger Tiefbau, keine Betonfundamente, und für weitere Ladepunkte braucht es keine neue Zuleitung. Wie sich das konkret auswirkt, zeigt unser Kostenvergleich an einem Beispielprojekt." | trans }}
     </p>
+    {{# The French cost comparison also serves the Italian site; English falls back to German. #}}
+    {{ cost_comparison = (site:handle == 'fr' || site:handle == 'it') ? '/assets/amp5_vs_bornes_murales_comparatif_couts_installation_v2.pdf' : '/assets/amp5_vs_wallboxen_installationskostenvergleich.pdf' }}
+    <a
+      href="{{ cost_comparison }}"
+      target="_blank"
+      class="group inline-flex items-center gap-2 text-sm font-semibold text-accent mb-10"
+      aria-label="{{ 'Kostenvergleich herunterladen (PDF)' | trans }}">
+      {{ partial:components/icons/icon-arrow-down-tray class="size-4 shrink-0 fill-current group-hover:translate-y-0.5 transition-transform" }}
+      <span class="underline decoration-transparent group-hover:decoration-current underline-offset-4 decoration-1 transition duration-200">{{ "Kostenvergleich herunterladen (PDF)" | trans }}</span>
+    </a>
     <ul class="space-y-3 text-md text-zinc-500 mb-8" role="list">
       <li class="flex gap-3">
         <span class="text-accent font-semibold shrink-0 leading-relaxed">–</span>
