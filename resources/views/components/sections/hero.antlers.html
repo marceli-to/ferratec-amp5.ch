@@ -4,11 +4,36 @@
     <p class="text-sm font-semibold text-brand-green mb-6">
       {{ "AMP5 · Exklusiv über Ferratec in der Schweiz" | trans }}
     </p>
-    <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight mb-8 max-w-[18ch]">
+    <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight mb-4 max-w-[18ch]">
       {{ "Ladeinfrastruktur. Als System gedacht." | trans }}
     </h1>
-    <p class="text-lg text-zinc-500 mb-4 max-w-[62ch]">
-      {{ "Modular von einem bis zu mehreren hundert Ladepunkten. Zentral gesteuert, kabelgebunden statt funkbasiert, mit minimalem Installationsaufwand. Geplant für über 20 Jahre Betrieb – erweiterbar, wartbar und zukunftssicher in Modulen. Vertrieben, geschult und betreut durch Ferratec Technics AG, Ihren Schweizer Spezialisten für E-Mobility-Lösungen." | trans }}
+    <p class="text-2xl md:text-3xl font-semibold tracking-tight text-zinc-900 mb-8">
+      {{ "Für Tiefgaragen und Parkplätze im Freien." | trans }}
+    </p>
+    <p class="text-lg text-zinc-500 mb-10 max-w-3xl">
+      {{ "Ausgelegt auf über 20 Jahre Betrieb – erweiterbar, wartbar, zukunftssicher. Vertrieb, Schulung und Support durch Ferratec Technics AG, Ihren Schweizer Spezialisten für E-Mobility." | trans }}
+    </p>
+    <div class="space-y-8 mb-10 max-w-3xl">
+      <div>
+        <h2 class="text-xl font-semibold mb-3">
+          {{ "Parkplätze im Freien (Gewerbe & Areale)" | trans }}
+        </h2>
+        <p class="text-zinc-500">
+          {{ "Eine Zuleitung genügt. Statt eines Grabens zu jeder Säule wird oberirdisch verteilt. Die Ladepunkte stehen auf Schraubfundamenten, ohne Beton. Weitere Ladepunkte lassen sich ohne erneuten Tiefbau ergänzen." | trans }}
+        </p>
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold mb-3">
+          {{ "Tiefgaragen (Mehrfamilienhäuser & STWEG)" | trans }}
+        </h2>
+        <p class="text-zinc-500">
+          {{ "Die Datenverbindung läuft über die Kabel im System, nicht über Funk. Eine zusätzliche WLAN-Infrastruktur in der Tiefgarage braucht es deshalb nicht. Alle Ladepunkte werden zentral gesteuert." | trans }}
+        </p>
+      </div>
+    </div>
+    <p class="text-lg text-zinc-500 mb-6 max-w-3xl">
+      <strong class="font-semibold text-zinc-900">{{ "Günstiger als Einzel-Wallboxen – und beim Ausbau noch deutlicher." | trans }}</strong>
+      {{ "Weniger Tiefbau, keine Betonfundamente, und für weitere Ladepunkte braucht es keine neue Zuleitung. Wie sich das konkret auswirkt, zeigt unser Kostenvergleich an einem Beispielprojekt." | trans }}
     </p>
     <ul class="space-y-3 text-md text-zinc-500 mb-8" role="list">
       <li class="flex gap-3">
@@ -36,13 +61,14 @@
         {{ "AMP5 entdecken" | trans }}
       </a>
     </div>
-    {{ partial:components/slider/container }}
-      {{ partial:components/slider/slide image="/assets/slider-01-tiefgarage-hero.jpg" alt="{ 'AMP5 Ladesystem in einer Tiefgarage mit mehreren Ladepunkten' | trans }" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover" sizes="(min-width: 1280px) 1200px, 100vw" loading="eager" }}
-      {{ partial:components/slider/slide image="/assets/slider-02-tiefgarage-detail.jpg" alt="{ 'AMP5 Ladepunkt Detailansicht in einer Tiefgarage' | trans }" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover" sizes="(min-width: 1280px) 1200px, 100vw" }}
-      {{ partial:components/slider/slide image="/assets/slider-03-installation-real.jpg" alt="{ 'Installation einer AMP5 Ladestation' | trans }" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover" sizes="(min-width: 1280px) 1200px, 100vw" }}
-      {{ partial:components/slider/slide image="/assets/slider-04-chargepod-closeup.jpg" alt="{ 'AMP5 ChargePod aus der Nähe' | trans }" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover" sizes="(min-width: 1280px) 1200px, 100vw" }}
-      {{ partial:components/slider/slide image="/assets/slider-05-aussenanlage-abend.jpg" alt="{ 'AMP5 Aussenanlage in der Abenddämmerung' | trans }" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover" sizes="(min-width: 1280px) 1200px, 100vw" }}
-      {{ partial:components/slider/slide image="/assets/slider-06-connectbar-herbst.jpg" alt="{ 'AMP5 ConnectBar in herbstlicher Umgebung' | trans }" class="w-full aspect-[3/2] md:aspect-[21/9] object-cover" sizes="(min-width: 1280px) 1200px, 100vw" }}
-    {{ /partial:components/slider/container }}
+    <video
+      class="w-full aspect-video bg-zinc-900"
+      controls
+      playsinline
+      preload="none"
+      poster="https://res.cloudinary.com/amp-society/video/upload/so_35,q_auto/v1769763113/AmpSociety_Amp5_Animation_720_argmt3.jpg"
+      aria-label="{{ 'AMP5 Animation: So funktioniert das Ladesystem' | trans }}">
+      <source src="https://res.cloudinary.com/amp-society/video/upload/q_auto/v1769763113/AmpSociety_Amp5_Animation_720_argmt3.mp4" type="video/mp4">
+    </video>
   </div>
 </section>

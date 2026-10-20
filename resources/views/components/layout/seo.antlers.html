@@ -1,0 +1,64 @@
+{{#
+  SEO and social meta tags, included in the <head> of the layout.
+  Description falls back from meta_description → teaser (posts) → default site description.
+  Non-production environments and error pages are set to noindex.
+#}}
+{{ is_error = response_code && response_code >= 400 }}
+{{ if is_homepage }}
+  {{ seo_title = 'AMP5 • Ferratec' }}
+{{ elseif is_error }}
+  {{ seo_title = ('Seite nicht gefunden' | trans) + ' – AMP5 • Ferratec' }}
+{{ else }}
+  {{ seo_title = title + ' – AMP5 • Ferratec' }}
+{{ /if }}
+{{ seo_description = meta_description ?? teaser ?? ('AMP5 Ladeinfrastruktur für Tiefgaragen und Parkplätze im Freien: modular, zentral gesteuert, für über 20 Jahre Betrieb. Exklusiv über Ferratec in der Schweiz.' | trans) }}
+<title>{{ seo_title | sanitize }}</title>
+<meta name="description" content="{{ seo_description | strip_tags | safe_truncate(160, '…') | sanitize }}">
+{{ if environment != 'production' || is_error }}
+<meta name="robots" content="noindex, nofollow">
+{{ else }}
+<meta name="robots" content="index, follow">
+{{ /if }}
+{{ unless is_error }}
+<link rel="canonical" href="{{ permalink ?? current_url }}">
+{{ if id }}
+{{ locales }}
+<link rel="alternate" hreflang="{{ locale:short }}" href="{{ permalink }}">
+{{ if locale:key == 'de' }}<link rel="alternate" hreflang="x-default" href="{{ permalink }}">{{ /if }}
+{{ /locales }}
+{{ /if }}
+{{ /unless }}
+<meta property="og:type" content="{{ if collection:handle == 'posts' }}article{{ else }}website{{ /if }}">
+<meta property="og:site_name" content="AMP5 • Ferratec">
+<meta property="og:url" content="{{ permalink ?? current_url }}">
+<meta property="og:title" content="{{ seo_title | sanitize }}">
+<meta property="og:description" content="{{ seo_description | strip_tags | safe_truncate(200, '…') | sanitize }}">
+<meta property="og:locale" content="{{ site:locale }}">
+{{ if image }}
+<meta property="og:image" content="{{ glide :src="image" width="1200" height="630" fit="crop_focal" absolute="true" }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{ else }}
+<meta property="og:image" content="{{ config:app:url }}/opengraph.jpg">
+{{ /if }}
+<meta name="twitter:card" content="summary_large_image">
+{{ if is_homepage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ferratec Technics AG",
+  "url": "{{ permalink }}",
+  "logo": "{{ config:app:url }}/web-app-manifest-512x512.png",
+  "email": "info@ferratec.ch",
+  "telephone": "+41 56 649 21 21",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Grossmattstrasse 19",
+    "postalCode": "8964",
+    "addressLocality": "Rudolfstetten",
+    "addressCountry": "CH"
+  }
+}
+</script>
+{{ /if }}

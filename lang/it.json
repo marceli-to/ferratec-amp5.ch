@@ -7,7 +7,15 @@
   "News": "Novità",
   "Kontakt": "Contatto",
   "Ladeinfrastruktur. Als System gedacht.": "Infrastruttura di ricarica. Concepita come sistema.",
-  "Modular von einem bis zu mehreren hundert Ladepunkten. Zentral gesteuert, kabelgebunden statt funkbasiert, mit minimalem Installationsaufwand. Geplant für über 20 Jahre Betrieb – erweiterbar, wartbar und zukunftssicher in Modulen. Vertrieben, geschult und betreut durch Ferratec Technics AG, Ihren Schweizer Spezialisten für E-Mobility-Lösungen.": "Modulare da uno a diverse centinaia di punti di ricarica. Gestione centralizzata, cablata anziché wireless, con un impegno di installazione minimo. Progettata per oltre 20 anni di funzionamento – ampliabile, manutenibile e a prova di futuro in moduli. Distribuita, formata e supportata da Ferratec Technics AG, il vostro specialista svizzero per soluzioni di e-mobility.",
+  "Für Tiefgaragen und Parkplätze im Freien.": "Per autorimesse sotterranee e parcheggi all'aperto.",
+  "AMP5 Animation: So funktioniert das Ladesystem": "Animazione AMP5: come funziona il sistema di ricarica",
+  "Ausgelegt auf über 20 Jahre Betrieb – erweiterbar, wartbar, zukunftssicher. Vertrieb, Schulung und Support durch Ferratec Technics AG, Ihren Schweizer Spezialisten für E-Mobility.": "Progettata per oltre 20 anni di funzionamento – ampliabile, manutenibile, a prova di futuro. Vendita, formazione e supporto da parte di Ferratec Technics AG, il vostro specialista svizzero per la e-mobility.",
+  "Parkplätze im Freien (Gewerbe & Areale)": "Parcheggi all'aperto (commercio & aree)",
+  "Eine Zuleitung genügt. Statt eines Grabens zu jeder Säule wird oberirdisch verteilt. Die Ladepunkte stehen auf Schraubfundamenten, ohne Beton. Weitere Ladepunkte lassen sich ohne erneuten Tiefbau ergänzen.": "Basta una sola linea di alimentazione. Invece di uno scavo verso ogni colonnina, la distribuzione avviene in superficie. I punti di ricarica poggiano su fondazioni a vite, senza calcestruzzo. Ulteriori punti di ricarica si possono aggiungere senza nuovi lavori di scavo.",
+  "Tiefgaragen (Mehrfamilienhäuser & STWEG)": "Autorimesse sotterranee (condomini & PPP)",
+  "Die Datenverbindung läuft über die Kabel im System, nicht über Funk. Eine zusätzliche WLAN-Infrastruktur in der Tiefgarage braucht es deshalb nicht. Alle Ladepunkte werden zentral gesteuert.": "La trasmissione dei dati avviene tramite i cavi del sistema, non via radio. Non serve quindi alcuna infrastruttura Wi-Fi aggiuntiva nell'autorimessa. Tutti i punti di ricarica sono gestiti centralmente.",
+  "Günstiger als Einzel-Wallboxen – und beim Ausbau noch deutlicher.": "Più conveniente delle singole wallbox – e ancora di più in caso di ampliamento.",
+  "Weniger Tiefbau, keine Betonfundamente, und für weitere Ladepunkte braucht es keine neue Zuleitung. Wie sich das konkret auswirkt, zeigt unser Kostenvergleich an einem Beispielprojekt.": "Meno lavori di scavo, nessuna fondazione in calcestruzzo e nessuna nuova linea di alimentazione per ulteriori punti di ricarica. Il nostro confronto dei costi su un progetto di esempio mostra cosa significa concretamente.",
   "Installation durch geschulte Schweizer Partner": "Installazione da parte di partner svizzeri qualificati",
   "Abrechnung mit eponet": "Fatturazione con eponet",
   "5 Jahre Garantie": "Garanzia 5 anni",
@@ -70,5 +78,8 @@
   "AMP5 ist eine Marke von AmpSociety": "AMP5 è un marchio di AmpSociety",
   "Zurück zu News": "Torna alle novità",
   "AMP5 im Einsatz": "AMP5 in azione",
-  "Datei herunterladen": "Scarica il file"
+  "Datei herunterladen": "Scarica il file",
+  "Link öffnen": "Apri il link",
+  "AMP5 Ladeinfrastruktur für Tiefgaragen und Parkplätze im Freien: modular, zentral gesteuert, für über 20 Jahre Betrieb. Exklusiv über Ferratec in der Schweiz.": "Ricarica AMP5 per autorimesse e parcheggi all'aperto: modulare, gestita centralmente, per oltre 20 anni. In esclusiva tramite Ferratec in Svizzera.",
+  "Seite nicht gefunden": "Pagina non trovata"
 }

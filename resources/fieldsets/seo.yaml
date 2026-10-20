@@ -5,4 +5,6 @@ fields:
     field:
       type: textarea
       display: 'Meta Description'
-      localizable: false
+      instructions: 'Shown in search results, ideally 120–160 characters. Leave empty to use the teaser (posts) or the default site description.'
+      character_limit: 160
+      localizable: true

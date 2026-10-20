@@ -29,18 +29,18 @@ fields:
     field:
       type: grid
       display: Files
-      instructions: 'The downloadable files, in the order they should appear.'
+      instructions: 'The downloadable files and links, in the order they should appear. Each row needs either a file or a link.'
       localizable: true
       mode: stacked
       reorderable: true
-      add_row: 'Add file'
+      add_row: 'Add file or link'
       fields:
         -
           handle: label
           field:
             type: text
             display: Label
-            instructions: 'Shown as the link text. Falls back to the file name if empty.'
+            instructions: 'Shown as the link text. Falls back to the file name (or the URL) if empty.'
         -
           handle: file
           field:
@@ -49,4 +49,15 @@ fields:
             container: assets
             max_files: 1
             validate:
-              - required
+              - 'required_without:{this}.url'
+        -
+          handle: url
+          field:
+            type: text
+            input_type: url
+            display: Link
+            instructions: 'External URL (e.g. a video). Used instead of a file; opens in a new tab.'
+            validate:
+              - 'required_without:{this}.file'
+              - 'nullable'
+              - 'url'
